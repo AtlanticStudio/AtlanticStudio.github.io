@@ -1,59 +1,59 @@
 !!!
 %html.no-js{:lang => ""}
   %head  
-    // Page title
+    -# Page title
     %title 🌊 Atlantic.Studio - The collective works of Luke Beard
     
     
-    //Viewport + encoding
+    -#Viewport + encoding
     %meta#viewport{:content => "width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1", :name => "viewport"}
     %meta(charset="utf-8")
     %meta{:content => "!", :name => "fragment"}
     %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}
 
-    //Standard search meta
+    -#Standard search meta
     %meta(content="Atlantic.Studio is the collective works of British born designer Luke Beard. Currently living and working in San Francisco." name="description")
     %meta(content="luke beard, exposure.co, altantic.studio" name="keywords")
 
 
-    //Favicon + Appletouch Icons
+    -#Favicon + Appletouch Icons
     %link(href="/favicon.ico" rel="icon")
     %link(href="/apple-touch-icon.ico" rel="apple-touch-icon")
 
-    //Facebook + Open Graph
+    -#Facebook + Open Graph
     %meta(content="Atlantic.Studio" property = "og:title")
     %meta(content="website" property = "og:type")
     %meta(content="Atlantic.Studio" property = "og:site_name")
     %meta(content="http://atlantic.studio/" property = "og:url")
-    %meta(content="The collective works of Luke Beard" property = "og:description")
+    %meta(content="Atlantic.Studio is the collective works of British born designer Luke Beard. Currently living and working in San Francisco." property = "og:description")
     %meta(content="http://atlantic.studio/og-image.png" property = "og:image")
 
-    //Twitter Card
+    -#Twitter Card
     %meta{:content => "summary_large_image", :name => "twitter:card"}
     %meta{:content => "@lukesberad", :name => "twitter:site"}
     %meta{:content => "@lukesberad", :name => "twitter:creator"}
     %meta{:content => "Atlantic.Studio - The collective works of Luke Beard", :name => "twitter:title"}
     %meta{:content => "http://atlantic.studio/og-image.png", :name => "twitter:image"}
     
-    //CSS
+    -#CSS
     %link{:href => "/css/basscss.css", :rel => "stylesheet"}
 
  
-  %body.bg-yellow
+  %body
 
-    %div.h-full.absolute.sm-col-4.col-11.bg-sand.right-0
+    %div.absolute.top-0.left-0.sm-p4.p3.z1
+      %h1.regular
+        %span.hide Atlantic.Studio
+        %img.sm-col-5.col-5{src:"/img/altantic.studios-logo.svg"}
 
-    %img.sm-col-1.col-2.sm-p4.p3.fixed.right-0{src:"/img/altantic.studios-logo-mark.svg"}
+    %img.sm-col-1.col-1.sm-p3.p3.fixed.right-0.z1{src:"/img/altantic.studios-logo-mark.svg"}
 
-    %div.h-full.px4.sm-px4.flex.items-center
+    %div.h-full.px3.sm-px4.flex.items-center.sm-col.sm-col-10
       %div
-        %h1
-          %span.hide Atlantic.Studio
-          %img.col-12{src:"/img/altantic.studios-logo.svg"}
+        %div.sm-mt3.mt1.h5.serif 
+          %span.h00-responsive.h1 Collective works of Luke Beard
 
-        %div.sm-mt3.mt1.sm-h2.h5 
-          %span.serif Collective works of 
-          %b Luke Beard
+    %div.h-full.sm-col.sm-col-2.bg-yellow.sm-hide
 
 
    

@@ -2,6 +2,12 @@
 
 @media #{$breakpoint-sm} {
 
+  .h1-responsive  { font-size: 5vw }
+
+  .h0-responsive  { font-size: 7vw }
+
+  .h00-responsive { font-size: 10vw }
+
   .sm-h0  { font-size: $h0 }
 
   .sm-h00 { font-size: $h00 }

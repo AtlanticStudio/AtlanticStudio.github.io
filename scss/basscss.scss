@@ -15,13 +15,18 @@
 @import "position";
 @import "border";
 
-@import "hide";
 @import "responsive-margin";
 @import "responsive-typo-scale";
 @import "responsive-padding";
+
+@import "hide";
 
 * {
   margin:0;
   padding: 0;
   position: relative;
+}
+
+.vert-logo {
+  transform: rotate(90deg);
 }
