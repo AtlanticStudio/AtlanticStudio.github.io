@@ -27,6 +27,12 @@ $width-4: 64rem !default;
 
 .overflow-auto   { overflow: auto }
 
+.overflow-x-hidden  { overflow-x: hidden }
+.overflow-y-hidden  { overflow-y: hidden }
+
+.overflow-x-auto  { overflow-x: auto }
+.overflow-y-auto  { overflow-y: auto }
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -52,3 +58,7 @@ $width-4: 64rem !default;
 .border-box { box-sizing: border-box }
 
 .h-full { height:100vh }
+
+.w-100per { width:100% }
+
+.h-100per { height:100% }

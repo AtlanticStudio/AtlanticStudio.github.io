@@ -20,6 +20,7 @@
 @import "responsive-padding";
 
 @import "hide";
+@import "effects";
 
 * {
   margin:0;
@@ -27,6 +28,95 @@
   position: relative;
 }
 
+.before-after {
+  &:before,&:after {
+    display: block;
+    content: "";
+    position: absolute;
+  }
+}
+
 .vert-logo {
   transform: rotate(90deg);
 }
+
+.bg-purple-grad {
+  background-image: linear-gradient(-180deg, #11120D 0%, #462869 94%, #462E7E 100%);
+}
+
+.bg-orange-grad {
+  background-image: linear-gradient(-190deg, #FCF079 3%, #F38453 51%, #E35683 100%);
+}
+
+.leaf {
+  background-image:url('/img/leaf-bg.png')
+}
+
+.shadow-big {
+  box-shadow: 2px 2px 44px 0px rgba(0,0,0,0.67);
+}
+
+nav a.btn {
+  position: relative;
+  @extend .before-after; 
+  @extend .no-underline;
+
+  &:before {
+    @extend .trans-bounce;
+    height: 4px;
+    width: 100%;
+    top: -4px;
+    left: 0;
+    @extend .bg-yellow;
+  }
+
+  &:hover {
+    opacity: 0.7;
+
+    &:before {
+      top:0;
+    }
+  }
+
+}
+
+a.btn.active {
+  &:before {
+    top:0;
+  }
+}
+
+.welcome {
+  .page-indicator {
+      left:1.8rem;
+  }
+}
+
+.profile {
+  .page-indicator {
+      left:9.9rem;
+  }
+}
+
+.page-indicator {
+  width:12px;
+  height:12px;
+}
+
+.location {
+    letter-spacing: 3px;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    position: absolute;
+    bottom: -2.4rem;
+    letter-spacing:3px;
+}
+
+.location-marker {
+  transform: rotate(0deg);
+  
+  &:hover {
+    transform: rotate(30deg);
+  }
+}
+
