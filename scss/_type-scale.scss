@@ -8,6 +8,7 @@ $h3: 1.25rem !default;
 $h4: 1rem !default;
 $h5: .875rem !default;
 $h6: .75rem !default;
+$h7: .50rem !default;
 
 // Custom Media Query Variables
 
@@ -29,4 +30,6 @@ $h6: .75rem !default;
 .h5 { font-size: $h5 }
 
 .h6 { font-size: $h6 }
+
+.h7 { font-size: $h7 }
 

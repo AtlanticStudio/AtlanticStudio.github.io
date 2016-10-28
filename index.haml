@@ -2,7 +2,7 @@
 %html.no-js.bg-black{:lang => ""}
   %head  
     -# Page title
-    %title 🌊 Atlantic.Studio - The collective works of Luke Beard
+    %title 🌊 Atlantic.Studio
     
     
     -#Viewport + encoding
@@ -12,8 +12,7 @@
     %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}
 
     -#Standard search meta
-    %meta(content="Atlantic.Studio is the collective works of British born designer Luke Beard. Currently living and working in San Francisco." name="description")
-    %meta(content="luke beard, exposure.co, altantic.studio" name="keywords")
+    %meta(content="Atlantic.Studio- strong as one" name="description")
 
 
     -#Favicon + Appletouch Icons
@@ -25,80 +24,32 @@
     %meta(content="website" property = "og:type")
     %meta(content="Atlantic.Studio" property = "og:site_name")
     %meta(content="http://atlantic.studio/" property = "og:url")
-    %meta(content="Atlantic.Studio is the collective works of British born designer Luke Beard. Currently living and working in San Francisco." property = "og:description")
+    %meta(content="Atlantic.Studio- strong as one" name="description" property = "og:description")
     %meta(content="http://atlantic.studio/og-image.png" property = "og:image")
 
     -#Twitter Card
-    %meta{:content => "summary_large_image", :name => "twitter:card"}
-    %meta{:content => "@lukesberad", :name => "twitter:site"}
-    %meta{:content => "@lukesberad", :name => "twitter:creator"}
-    %meta{:content => "Atlantic.Studio - The collective works of Luke Beard", :name => "twitter:title"}
-    %meta{:content => "http://atlantic.studio/og-image.png", :name => "twitter:image"}
+    -#%meta{:content => "summary_large_image", :name => "twitter:card"}
+    -#%meta{:content => "@lukesberad", :name => "twitter:site"}
+    -#%meta{:content => "@lukesberad", :name => "twitter:creator"}
+    -#%meta{:content => "Atlantic.Studio - The collective works of Luke Beard", :name => "twitter:title"}
+    -#%meta{:content => "http://atlantic.studio/og-image.png", :name => "twitter:image"}
     
     -#CSS
     %link{:href => "/css/basscss.css", :rel => "stylesheet"}
 
  
-  %body.welcome
-    %div.h-full.bg-purple-grad.relative
+  %body.bg-black.relative.wrapper
+    %div.border
+    %div.white.leaf.bg-cover.h-full.flex.items-center.center.col-12.relative
       
-      %nav.relative.z2.h3.md-px4.md-py3.p1
+      %div.absolute.top-0.left-0.col-12.mt4
+        %img.col-6.sm-col-2.mx-auto{src:"/img/altantic.studios-logo.svg"}
 
-        %a.medium.btn.py3.white.md-mr4.welcome.active{href:"#"}
-          Welcome
-
-        %a.medium.btn.white.md-mr4.py3.profile{href:"#"}
-          Profile
-
-        %a.medium.btn.white.md-mr4.py3{href:"#"}
-          Ventures
-
-        %a.medium.btn.white.md-mr4.py3{href:"#"}
-          Photography
-
-        %a.medium.btn.white.py3{href:"#"}
-          Contact
-
-        %div.page-indicator-wrapper.absolute.fit{style:"bottom:-2rem;"}
-          %div.bg-white.circle.relative.page-indicator.trans-bounce
-
-      -# Leaf Wrapper
-      %div.leaf.bg-cover.shadow-big.sm-mr4.mr2.relative.white.z1{style:"height:80.8vh;min-height:600px;margin-bottom:4rem;"}
-
-        %h6.m0.caps.location.py3.z4
-          %img.align-bottom.mr1.location-marker.trans-bounce.relative.z1{src:"/img/location-marker.svg",style:"width:10px"}
+      %div.absolute.bottom-0.left-0.col-12.mb4
+        %img.mx-auto{src:"/img/a-s-wordmark.svg",style:"max-width:70px;"}
+        %h6.h7.caps.bold.sans-serif.mt3
           San Francisco, Califorina
-
-        %img.absolute{src:"/img/a-s-wordmark.svg",style:"right:-1.6rem;top:-1.6rem;width:13%"}
-        
-        %h3.md-h3.h4.m0.absolute.right-0.bottom-0.regular.md-px3.md-py4.p2
-          Digital designer, photographer &amp; entrepreneur
-
-        %div.absolute.flex.items-center.content-stretch.h-100per.w-100per
-          
-          %div.md-px4.md-ml4.px3
-            %h1.serif.regular.m0.md-ml3{style:"font-size:7.9vw;line-height:1.03;"}
-              Atlantic.Studio is
-              %div
-              the collective works 
-              %div
-              of Luke Beard
-
-    %div.fixed.bottom-0.right-0.col-11.bg-orange-grad{style:"height:55vh"}
-      %div.absolute.bottom-0.col-12.flex.items-center.mb2
-        
-        %div.flex-auto.px3.flex.items-center
-          %img{src:"/img/altantic.studios-logo.svg",style:"width:200px"}
-
-          %div.ml2.mr2.bg-black{style:"height:3px;width:18px;"}
-
-          %div.h5
-            %a.btn.white.no-underline.mr2{href:""} Instagram
-            %a.btn.white.no-underline.mr2{href:""} Twitter
-            %a.btn.white.no-underline{href:""} Exposure
-
-        %div.px3.right-align.mr3
-          %div.h5
-            %a.white.no-underline.mb1.inline-block{href:"mailto:luke@atlantic.studio"}luke@atlantic.studio
-            %div
-            +1 415 994 2431
+      
+      %div.col-12.center.relative.z4
+        %a.h1.h1-responsive.serif.no-underline.white{href:"mailto:workwith@atlantic.studio"} 
+          workwith@atlantic.studio
